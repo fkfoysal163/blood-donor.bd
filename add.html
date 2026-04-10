@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>দাতা হন | Blood Donor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="top-nav"><div class="logo">Blood <span>Donor</span></div></nav>
+    <div class="main-content-center">
+        <div id="authBox" class="auth-wrapper glass" style="animation: slideInUp 0.7s ease;">
+            <h2 id="authTitle">লগইন করুন</h2>
+            <div style="display:flex; flex-direction:column; gap:15px; margin-top:20px;">
+                <input type="email" id="email" class="full-input" placeholder="ইমেইল">
+                <input type="password" id="password" class="full-input" placeholder="পাসওয়ার্ড">
+                <button id="authBtn" class="red-btn">প্রবেশ করুন</button>
+            </div>
+            <p id="toggleText" style="margin-top:20px; cursor:pointer; font-size:13px; color:#888;">নতুন অ্যাকাউন্ট তৈরি করুন</p>
+        </div>
+        <div id="donorFormBox" class="auth-wrapper glass" style="display:none; animation: slideInUp 0.7s ease;">
+            <h2>আপনার তথ্য দিন</h2>
+            <form id="bloodForm" style="display:flex; flex-direction:column; gap:15px; margin-top:20px;">
+                <input type="text" id="dName" class="full-input" placeholder="আপনার নাম" required>
+                <input type="text" id="dAddress" class="full-input" placeholder="এলাকা" required>
+                <select id="dBlood" class="full-input" required>
+                    <option value="">ব্লাড গ্রুপ</option>
+                    <option value="A+">A+</option><option value="B+">B+</option>
+                    <option value="O+">O+</option><option value="AB+">AB+</option>
+                </select>
+                <input type="tel" id="dPhone" class="full-input" placeholder="ফোন নাম্বার" required>
+                <button type="submit" class="red-btn">তথ্য জমা দিন</button>
+            </form>
+            <p onclick="logoutUser()" style="margin-top:20px; cursor:pointer; color:red; font-size:13px;">লগআউট করুন</p>
+        </div>
+    </div>
+    <div class="bottom-nav">
+        <a href="index.html" class="nav-item"><i class="fas fa-home"></i><span>হোম</span></a>
+        <a href="add.html" class="nav-item active"><i class="fas fa-plus-circle"></i><span>দাতা হন</span></a>
+        <a href="about.html" class="nav-item"><i class="fas fa-info-circle"></i><span>তথ্য</span></a>
+        <a href="contact.html" class="nav-item"><i class="fas fa-phone-alt"></i><span>যোগাযোগ</span></a>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donor | হোম</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="logo">Blood <span>Donor</span></div>
+    </nav>
+    <header class="hero">
+        <h1>জরুরী রক্তদাতার প্রয়োজন?</h1>
+        <p>সঠিক সময়ে রক্ত দান করে অন্যের মুখে হাসি ফোটান।</p>
+    </header>
+    <div class="search-area glass">
+        <input type="text" id="locSearch" class="search-input" placeholder="এলাকা দিয়ে খুঁজুন...">
+        <select id="bloodSearch" class="search-input">
+            <option value="">সকল গ্রুপ</option>
+            <option value="A+">A+</option><option value="B+">B+</option>
+            <option value="O+">O+</option><option value="AB+">AB+</option>
+        </select>
+        <button class="red-btn" onclick="fetchDonors()">সার্চ করুন</button>
+    </div>
+    <div class="container"><div id="donorContainer" class="donor-grid"></div></div>
+    <div class="bottom-nav">
+        <a href="index.html" class="nav-item active"><i class="fas fa-home"></i><span>হোম</span></a>
+        <a href="add.html" class="nav-item"><i class="fas fa-plus-circle"></i><span>দাতা হন</span></a>
+        <a href="about.html" class="nav-item"><i class="fas fa-info-circle"></i><span>তথ্য</span></a>
+        <a href="contact.html" class="nav-item"><i class="fas fa-phone-alt"></i><span>যোগাযোগ</span></a>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
